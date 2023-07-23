@@ -2,8 +2,9 @@
 spl_autoload_register('myAutoLoader');
 
 function myAutoLoader($className) {
-    $path = './classses/';
-    $extention ='.classes.php';
+    $path = './classes/';
+    $extention ='.class.php';
     require_once $path . $className . $extention;
 }
+
 ?>
