@@ -3,9 +3,7 @@ class Customers extends Dbh {
     protected function getCustomers(){
        $query = "SELECT * FROM customers";
        $result = $this -> connect() -> query($query);
-       while($row = $result->fetch_assoc()) {
-        echo $row['firstname'] . $row['lastname'] . $row['phonenumber'] . '<hr>';
-       }
+       return $result;
     }
     protected function setCustomers($firstname, $lastname, $phonenumber){
         $query = "INSERT INTO customers ('firstname','lastname','phonenumber') VALUES (?,?,?)";
