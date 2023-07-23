@@ -1,4 +1,7 @@
-<?php include "includes/header.php"?>
+<?php 
+include "includes/header.inc.php";
+include "includes/class-autoload.inc.php";
+?>
 <body>
 	
 	<div class="limiter">
@@ -38,4 +41,4 @@
 
 	<div id="dropDownSelect1"></div>
     
-<?php include "includes/footer.php"?>
+<?php include "includes/footer.inc.php"?>
